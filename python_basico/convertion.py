@@ -9,3 +9,4 @@ print('a' + 'b') # Concat
 print(int('1'), type(int('1'))) # ex de coerção
 print(int('1') + 1)
 print(float(1.5) + 1) # o inteiro é convertido para um float
+print(str(11) + 'b')
