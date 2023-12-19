@@ -9,4 +9,4 @@ print(frase)
 
 # Formatando números
 real = 1005.39
-print(f'seu troco é de {real:,.2f} reais')
+print(f'seu troco é de {real:,.2f} reais') # colocando vírgula no float e apenas duas casas decimais
