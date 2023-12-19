@@ -1,7 +1,7 @@
 nome = 'Enuch'
 sobrenome = 'Santos'
 idade = 25
-ano_nascimento = 1998
+ano_nascimento = 2023 - idade
 maior_de_idade = idade >= 18
 altura_metros = 1.73
 
