@@ -8,9 +8,7 @@ name = input("Digite seu nome: ")
 
 if len(name) <= 4:
     print("Seu nome é curto demais trouxa!")
-
-if 5 <= len(name) <= 6:
+elif 5 <= len(name) <= 6:
     print("Seu nome é normal demais bobão!")
-    
-if len(name) > 6:
+else:
     print("Seu nome é grande demais seu otário!")
