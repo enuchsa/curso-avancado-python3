@@ -7,6 +7,9 @@ digitar uma letra.
 Conte as tentativas
 """
 
+import os
+
+
 secret_word = 'Evolução'
 hits = 0
 show_secret_word = '' * len(secret_word)
