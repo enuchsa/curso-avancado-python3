@@ -23,21 +23,13 @@ contrário disso:
 
 O primeiro dígito do CPF é 7
 """
-import re
-# CPF = '746.824.890-70'
-CPF = re.sub(
-    r'[^0-9]',
-    '',
-    '93022363150'
-)
-nove_digitos = CPF[:9]
+import random
+
+nove_digitos = ''
+for num in range(9):
+    nove_digitos += str(random.randint(0, 9))
 regret_count = 10
 result = 0
-
-# primeiro_caracter = 'aaaaa'
-# primeiro_caracter_repetido = primeiro_caracter[0] * len(primeiro_caracter)
-# if primeiro_caracter == primeiro_caracter_repetido:
-#     print('cpf invalido')
 
 for digito in nove_digitos:
     result += int(digito) * regret_count
@@ -46,7 +38,7 @@ for digito in nove_digitos:
 digito_1 = (result * 10) % 11
 digito_1 = 0 if digito_1 > 9 else digito_1
 
-dez_digitos = CPF[:10]
+dez_digitos = nove_digitos + str(digito_1)
 regret_count = 11
 result = 0
 for digito in dez_digitos:
@@ -58,5 +50,4 @@ digito_2 = 0 if digito_2 > 9 else digito_2
 
 new_cpf = f'{nove_digitos}{digito_1}{digito_2}'
 
-if new_cpf == CPF:
-    print('Valido!')
+print(new_cpf)
